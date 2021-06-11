@@ -1,6 +1,6 @@
 import { getInputDirection } from "./input.js"
 
-export var SNAKE_SPEED = 5
+export let SNAKE_SPEED = 5
 const snakeBody = [{ x: 11, y: 11 }]
 let newSegments = 0
 
@@ -53,6 +53,5 @@ function addSegments() {
     for (let i = 0; i < newSegments; i++) {
         snakeBody.push({ ...snakeBody[snakeBody.length - 1] })
     }
-
     newSegments = 0
 }
