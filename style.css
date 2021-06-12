@@ -132,7 +132,7 @@ CONTROL
     justify-content: center;
     flex-flow: wrap;
     align-items: center;
-    height: 100vh;
+    height: 50%;
     width: 100%;
     border: 1px solid black;
     box-shadow: inset 0px 0px 9px 6px black;
