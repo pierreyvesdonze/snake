@@ -59,8 +59,12 @@ html {
 }
 
 .snake {
-  background-color: rgb(145, 255, 0);
+  background-color: rgb(146, 233, 33);
   border: 0.25vmin solid black;
+}
+
+.snake:first-child {
+  border-radius: 50%;
 }
 
 .food {
