@@ -47,7 +47,7 @@ html {
   position: absolute;
   top: 50%;
   font-size: 6em;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 #score {
@@ -61,7 +61,6 @@ html {
 .snake {
   background-color: rgb(145, 255, 0);
   border: 0.25vmin solid black;
-  border-radius: 10px;
 }
 
 .food {
@@ -86,21 +85,56 @@ CONTROL
 
 #main-control-middle {
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
-@media screen and (max-width: 400px) {
+.mobile-control {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+  font-weight: 400;
+  outline: none;
+  border: none;
+  background-color: #a53939;
+  box-shadow: 0px 0px 5px 3px black;
+}
+
+.mobile-control:hover,
+.mobile-control:active {
+  box-shadow: inset 0px 0px 3px 3px black;
+  color: white;
+}
+
+#control-up:after {
+  content: "\2B06";
+}
+#control-right:after {
+  content: "\27A1";
+}
+#control-down:after {
+  content: "\2B07";
+}
+#control-left:after {
+  content: "\2B05";
+}
+
+@media screen and (max-width: 500px) {
   .snake-title {
-    font-size: 1.5em;
+    font-size: 3em;
     top: 25%;
   }
   .control {
+    background: url(./images/real-carbon-fibre.png);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-flow: wrap;
     align-items: center;
     height: 100vh;
-    width: 100vw;
-    background-color: red;
+    width: 100%;
+    border: 1px solid black;
+    box-shadow: inset 0px 0px 9px 6px black;
+    background-color: #0e0e0e;
   }
 }
