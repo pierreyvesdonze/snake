@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,11 +8,26 @@
     <title>S N A K E</title>
     <script src="app.js" defer type="module"></script>
   </head>
+
   <body>
+    <div class="wrapper">
       <div class="header">
-          <div id="score"></div>
+        <div id="score"></div>
       </div>
       <div class="snake-title">S N A K E</div>
       <div id="game-board"></div>
+      <div class="control">
+        <div id="main-control-up">
+			<button type="button" class="mobile-control" id="control-up">&#8593;</button>
+        </div>
+        <div id="main-control-middle">
+			<button type="button" class="mobile-control" id="control-left">&#8592;</button>
+			<button type="button" class="mobile-control" id="control-right">&#8594;</button>
+        </div>
+        <div id="main-control-down">
+			<button type="button" class="mobile-control" id="control-down">&#8595;</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

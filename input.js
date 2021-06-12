@@ -22,6 +22,32 @@ window.addEventListener('keydown', e => {
     }
 })
 
+//MOBILE
+document.getElementById('control-up').addEventListener('click', function () {
+    if (lastInputDirection.y !== 0) {
+        return false
+    }
+    inputDirection = { x: 0, y: -1 }
+})
+document.getElementById('control-down').addEventListener('click', function () {
+    if (lastInputDirection.y !== 0) {
+        return false
+    }
+    inputDirection = { x: 0, y: 1 }
+})
+document.getElementById('control-left').addEventListener('click', function () {
+    if (lastInputDirection.x !== 0) {
+        return false
+    }
+    inputDirection = { x: -1, y: 0 }
+})
+document.getElementById('control-right').addEventListener('click', function () {
+    if (lastInputDirection.x !== 0) {
+        return false
+    }
+    inputDirection = { x: 1, y: 0 }
+})
+
 export function getInputDirection() {
     lastInputDirection = inputDirection
     return inputDirection

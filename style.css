@@ -1,4 +1,21 @@
-body {
+* {
+  user-select: none;
+}
+
+body,
+html {
+  position: fixed;
+  height: 100vh;
+  overflow: hidden;
+  width: 100vw;
+  margin: 0;
+}
+
+.screen {
+  height: 250px;
+}
+
+.wrapper {
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -30,7 +47,7 @@ body {
   position: absolute;
   top: 50%;
   font-size: 6em;
-  opacity: .3;
+  opacity: 0.3;
 }
 
 #score {
@@ -47,9 +64,43 @@ body {
   border-radius: 10px;
 }
 
-
 .food {
   background-color: yellow;
   border: 0.25vmin solid black;
   border-radius: 20px;
+}
+
+/**
+CONTROL
+*/
+.control {
+  display: none;
+  font-size: 4em;
+}
+
+#main-control-up,
+#main-control-middle,
+#main-control-down {
+  display: flex;
+}
+
+#main-control-middle {
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 400px) {
+  .snake-title {
+    font-size: 1.5em;
+    top: 25%;
+  }
+  .control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: red;
+  }
 }
